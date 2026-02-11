@@ -25,5 +25,14 @@ services:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/provisioning/datasources/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml
+      - ./grafana/provisioning/dashboards/provider.yml:/etc/grafana/provisioning/dashboards/provider.yml
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards/files
+      - grafana-storage:/var/lib/grafana
     depends_on:
       - prometheus
+
+volumes:
+  grafana-storage:
