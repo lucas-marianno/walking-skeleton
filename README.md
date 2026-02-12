@@ -1,5 +1,4 @@
 # Walking Skeleton
-
 A minimal REST API created to test CI/CD automation and observability on a Oracle Cloud VPS.
 
 ## Tech Stach
@@ -13,7 +12,19 @@ A minimal REST API created to test CI/CD automation and observability on a Oracl
 - Nginx
 - Oracle Cloud VPS
 
-## How to run
+## Access the live website
+The current project is live and running at [http://skeleton.olaria.online/](http://skeleton.olaria.online/).
+
+You can send requests to the api (as documented bellow), or you can check its [grafana's dashboard](http://skeleton.olaria.online/grafana/d/OS7-NUiGz/spring-boot-statistics-and-endpoint-metrics).
+
+>[!note]
+>Since this api is public, I have created a visitor user profile that you can use to access the dashboard  
+>
+>Login and password: `visitor`
+
+FYI: The entire API is running inside a `docker-compose` container in a Oracle `VPS`. It is using `Nginx` as reverse proxy. The sub-domain is hosted by hostinger.
+
+## How to run the project yourself
 > You'll need `docker` and `docker compose` installed.
 
 ### A. Running locally
