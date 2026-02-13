@@ -1,0 +1,3 @@
+[ ] Upgrade connection to https
+[ ] Create CI/CD pipeline (auto-update VPS based on new releases on 'main' branch)
+[ ] Research on how to have multiple apps running on the same machine, but different repos (micro-services?)
