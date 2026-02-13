@@ -13,7 +13,7 @@ A minimal REST API created to test CI/CD automation and observability on a Oracl
 - Oracle Cloud VPS
 
 ## Access the live website
-The current project is live and running at [http://skeleton.olaria.online/](http://skeleton.olaria.online/).
+The current project is live and running at [http://skeleton.olaria.online/](http://skeleton.olaria.online/hello).
 
 You can send requests to the api (as documented bellow), or you can check its [grafana's dashboard](http://skeleton.olaria.online/grafana/d/OS7-NUiGz/spring-boot-statistics-and-endpoint-metrics).
 
