@@ -19,10 +19,11 @@
 
     <h2>API Documentation</h2>
 
-    <h3>/ Hello World endpoint</h3>
+    <h3>Hello endpoint</h3>
     <p>A simple hello world endpoint for testing connectivity.</p>
     <ul>
-        <li><strong>Endpoint:</strong> <code>GET /hello</code></li>
+        <li><strong>Endpoint (live):</strong> <a href="http://skeleton.olaria.online/hello?name=beautiful">http://skeleton.olaria.online/hello?name=example</a></li>
+        <li><strong>Endpoint:</strong> <code>GET</code> <code>/hello</code></li>
         <li><strong>Returns:</strong> <code>200 OK</code> + body <code>hello [name]</code></li>
         <li><strong>Params:</strong></li>
         <ul>
@@ -30,27 +31,32 @@
             <li><code>delay</code>: delays the response by "n" seconds</li>
         </ul>
     </ul>
-
+    
     <hr>
 
-    <h3>/ Grafana</h3>
+    <h3>Grafana endpoint</h3>
     <p>Provides the entrypoint to the Grafana admin interface.</p>
     <p>Grafana's provisioning is already set up. The data source is connected to <strong>Prometheus</strong> and a dashboard has been pre-created.</p>
     <ul>
-        <li><strong>Endpoint:</strong> <code>GET /grafana</code> (Remote) | <code>GET localhost:3000</code> (Local)</li>
+	<li><strong>Endpoint (live):</strong> <a href="http://skeleton.olaria.online/grafana">http://skeleton.olaria.online/grafana</a> | Live dashboard <a href="http://skeleton.olaria.online/grafana/d/OS7-NUiGz/spring-boot-statistics-and-endpoint-metrics">here</a>.</li>
+        <li><strong>Endpoint (remote): </strong> <code>GET</code> <code>/grafana</code></li>
+        <li><strong>Endpoint (local): </strong> <code>GET</code> <code>localhost:3000</code></li>
     </ul>
 
     <div class="callout">
         <div class="callout-title">💡 Tip</div>
         <p>Grafana's default login and password is <code>admin</code>.</p>
+        <p>On the live endpoint, you can log in as guest! Guest's login and password is <code>visitor</code>.</p>
     </div>
 
     <hr>
 
-    <h3>/ Prometheus</h3>
+    <h3>Prometheus endpoint</h3>
     <p>Provides raw metrics to be consumed by Grafana.</p>
     <ul>
-        <li><strong>Endpoint:</strong> <code>GET /actuator/prometheus</code> (Remote) | <code>GET localhost:9090</code> (Local)</li>
+        <li><strong>Endpoint (live):</strong> <a href="http://skeleton.olaria.online/actuator/prometheus">http://skeleton.olaria.online/actuator/prometheus</a></li>
+        <li><strong>Endpoint (remote):</strong> <code>GET</code> <code>/actuator/prometheus</code></li>
+        <li><strong>Endpoint (local):<code>GET</code> <code>localhost:9090</code></li>
     </ul>
 
 </body>
